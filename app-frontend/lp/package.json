@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pre": "cat .input-directory | cat",
-    "start": "cat src/pc/wwwroot/example-lp/css/default.css | postcss > out.css",
-    "build": "cat .input-directory | cat | postcss --base src --dir ../../"
+    "start": "postcss ./src/**/[!_]*.css --base ./src --dir ../../ -w",
+    "build": "postcss ./src/**/[!_]*.css --base ./src --dir ../../"
   },
   "author": "",
   "license": "ISC",
