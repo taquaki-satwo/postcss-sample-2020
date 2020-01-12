@@ -1,0 +1,6 @@
+@import './components/_component.css';
+
+body {
+  background-color: var(--color);
+  font-size: 12px;
+}
